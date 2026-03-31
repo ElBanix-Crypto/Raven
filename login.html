@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endy-Form</title>
+    <style>
+        .login-form {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px 30px;
+            background-color: rgb(186, 250, 103);
+        }
+
+        form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #759b0e;
+        }
+
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-form"></div>
+    <form>
+        <h2>Login</h2>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required placeholder="Enter a valid email">
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required placeholder="Enter your password">
+        <br><br> <input type="submit" value="Login!" class="submit-button">
+    </form>
+</body>
+
+</html>
